@@ -1,10 +1,10 @@
 FROM ubuntu:latest
-MAINTAINER Silva Song "silva.song@aliyun.com"
+MAINTAINER Silva Song "13760224840@163.com"
 
 #安装JDK
 RUN apt-get update
 #RUN sudo add-apt-repository ppa:openjdk-r/ppa
-RUN apt-get install openjdk-8-jdk 
+RUN apt-get install -y openjdk-8-jdk 
 RUN apt-get install -y wget
 
 #安装tomcat
