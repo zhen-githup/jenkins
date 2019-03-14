@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 MAINTAINER linzhen "13760224840@163.com"
-RUN add-apt-repository ppa:webupd8team/java
+#RUN add-apt-repository ppa:webupd8team/java
 #sudo apt-get update
 #sudo apt-get install oracle-java8-installer
 #安装JDK
