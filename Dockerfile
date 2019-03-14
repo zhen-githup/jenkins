@@ -1,4 +1,4 @@
-FROM centos:latest #完整的格式为docker.io/offical/centos:latest
+FROM centos:latest 
 MAINTAINER lzhen "13760224840@163.com"
 RUN yum install java-1.7.0-openjdk.x86_64 -y
 #RUN rm /etc/yum.repos.d/*.repo
@@ -21,6 +21,6 @@ RUN set-ex; \
         ln -sv apache-tomcat-7.0.85/ /hskj/tomcat; \
         rm -rf /hskj/tomcat/webapps/ROOT/*; \
         echo "this is my first docker image" >> /hskj/tomcat/webapps/ROOT/index.html
-VOLUME /hskj/tomcat #此时会将改目录挂载到宿主机docker数据目录下的子目录中
-EXPOSE 8080 #暴露8080端口
-CMD  /hskj/tomcat/bin/catalina.sh run #前台运行进程
+VOLUME /hskj/tomcat 
+EXPOSE 8080 
+CMD  /hskj/tomcat/bin/catalina.sh run 
