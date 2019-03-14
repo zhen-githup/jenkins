@@ -1,10 +1,10 @@
 FROM ubuntu:latest
-MAINTAINER Silva Song "13760224840@163.com"
+MAINTAINER linzhen "13760224840@163.com"
 
 #安装JDK
 RUN apt-get update
 #RUN sudo add-apt-repository ppa:openjdk-r/ppa
-RUN apt-get install -y openjdk-8-jdk 
+RUN apt-get install -y openjdk-7-jdk 
 RUN apt-get install -y wget
 
 #安装tomcat
@@ -31,4 +31,3 @@ RUN cd /var/tmp/webapp && mvn package && cp /var/tmp/webapp/target/CIJD.war /var
 EXPOSE 8080
 
 CMD ["./var/tmp/tomcat/apache-tomcat-8.0.33/bin/catalina.sh","run"]
-
