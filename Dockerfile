@@ -4,7 +4,7 @@ MAINTAINER Silva Song "silva.song@aliyun.com"
 #安装JDK
 RUN apt-get update
 #RUN sudo add-apt-repository ppa:openjdk-r/ppa
-RUN apt-get install -y openjdk* 
+RUN apt-get install -y oracle-java7-installer
 RUN apt-get install -y wget
 
 #安装tomcat
