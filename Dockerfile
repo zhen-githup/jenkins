@@ -1,10 +1,13 @@
 FROM ubuntu:latest
 MAINTAINER linzhen "13760224840@163.com"
-
+RUN add-apt-repository ppa:webupd8team/java
+#sudo apt-get update
+#sudo apt-get install oracle-java8-installer
 #安装JDK
 RUN apt-get update
 #RUN sudo add-apt-repository ppa:openjdk-r/ppa
-RUN apt-get install -y openjdk-7-jdk 
+#RUN apt-get install -y openjdk-8-jdk 
+RUN apt-get install oracle-java8-installer
 RUN apt-get install -y wget
 
 #安装tomcat
