@@ -20,7 +20,7 @@ RUN set-ex; \
         tar xvf apache-tomcat-7.0.85.tar.gz; \
         ln -sv apache-tomcat-7.0.85/ /hskj/tomcat; \
         rm -rf /hskj/tomcat/webapps/ROOT/*; \
-        echo "this is my second docker image" >> /hskj/tomcat/webapps/ROOT/index.html
+        echo "this is third docker image" >> /hskj/tomcat/webapps/ROOT/index.html
 VOLUME /hskj/tomcat 
 EXPOSE 8080 
 CMD  /hskj/tomcat/bin/catalina.sh run 
